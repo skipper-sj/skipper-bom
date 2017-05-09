@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="api-integration" />
+        <module name="boot-integration" />
         <module name="dao-integration" />
         <module name="service-integration" />
         <module name="web-integration" />
@@ -14,6 +15,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="api-integration" target="1.8" />
+      <module name="boot-integration" target="1.8" />
       <module name="dao-integration" target="1.8" />
       <module name="service-integration" target="1.8" />
       <module name="skipper-bom" target="1.5" />

@@ -13,6 +13,7 @@
         <module>api-integration</module>
         <module>dao-integration</module>
         <module>service-integration</module>
+        <module>boot-integration</module>
     </modules>
 
     <properties>
@@ -30,6 +31,7 @@
         <validation-api.version>1.1.0.Final</validation-api.version>
         <commons-lang3.version>3.4</commons-lang3.version>
         <javax.ws.rs.version>2.0</javax.ws.rs.version>
+        <spring.boot.version>1.4.1.RELEASE</spring.boot.version>
 
     </properties>
 
@@ -143,6 +145,16 @@
                 <scope>import</scope>
             </dependency>
 
+            <!-- spring-boot -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
@@ -158,6 +170,7 @@
         </dependencies>
     </dependencyManagement>
 
+    <!-- 暂时用公司的仓库 -->
     <repositories>
         <repository>
             <id>nexus</id>
